@@ -1,0 +1,80 @@
+<!--Nama : Gintara Saputra-->
+<!--Kelas: IF-8-->
+<!--Nim  : 10123312-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Hunter X Hunter </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+</style>
+<body>
+  <!--Navbar-->
+    <header>
+        <a href="" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Hunter_x_hunter.png"></a>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="pages/season.html">Arc</a></li>
+            <li><a href="pages/char.html">Character</a></li>
+            <li><a href="pages/mylist.html">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+  <!--End Navbar-->
+    <div class="banner">
+        <img src="https://motionbgs.com/media/3234/killua-zoldyck-hunter-x-hunter.jpg" class="bg">
+        <div class="content">
+            <h2>Hunter X Hunter</h2>
+            <h4>
+                <span>TV Series</span>
+                <span>2011 - 2014</span>
+                <span><i>16+</i></span>
+                <span>24m</span>
+                <span>Animation, Action, Adventure</span>
+            </h4>
+            <p>Hunter x Hunter" is one of the most popular and beloved anime series worldwide.
+              Created by Yoshihiro Togashi, the anime follows the journey of a young boy named Gon Freecss,
+              who aspires to become a Hunter like his long-lost father in order to find him. Alongside his newfound
+              friends Killua Zoldyck, Kurapika, and Leorio Paradinight, Gon ventures into a world full of wonders, dangers
+              , and unexpected adventures. With its thrilling plot, complex characters, and epic battles, "Hunter x Hunter" has
+               captivated millions of viewers with its exceptional quality.</p>
+        <div class="buttons">
+            <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+            <a href="pages/mylist"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+        </div>
+    </div>
+    <a class="play" onclick="toggleVideo();"><img src="multimedia/play.png">Watch Trailer</a>
+    </div>
+    <div class="trailer">
+        <iframe src="https://www.youtube.com/embed/d6kBeJjTGnY" frameborder="0" width="900px" height="450px"></iframe>
+        <img src="multimedia/close.png" class="close" onclick="toggleVideo();">
+    </div>
+    <footer>
+        <div class="footer-container">
+          <p>by &copy; Gintara Saputra 2024</p>
+        </div>
+      </footer>
+  </body>
+    <script>
+      function toggleVideo(){
+    const trailer = document.querySelector('.trailer');
+    trailer.classList.toggle('active');
+}
+    </script>
+</html>
